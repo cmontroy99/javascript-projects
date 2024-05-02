@@ -3,6 +3,7 @@
 
 // Given the values for fuelLevel, crewStatus and computerStatus, should launchReady be true or false?
 // Is the program behaving as expected?
+// LaunchReady should be false. The program, however, is not behaving as expected. the fuelLevel if/else statement printed properly, but the second one had some confusing results.
 
 let launchReady = false;
 let fuelLevel = 17000;
