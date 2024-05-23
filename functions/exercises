@@ -1,0 +1,59 @@
+
+
+function makeLine(size) {
+    let line = "";
+    for (let i = 0; i < size; i++) {
+     line += "#";
+    }
+    return line;
+}
+// console.log(makeLine(5));
+
+
+function makeRectangle(size) {
+    let square = "";
+    for (let i = 0; i < size; i++) {
+        square += makeLine();
+    }
+    for (let i = 0; i < size; i++) {
+        square += ("\n" + makeLine(size));
+    }
+    return square;
+}
+// console.log(makeRectangle(5));
+
+
+function makeRectangle(width, height) {
+    let rectangle = "";
+    for (let i = 0; i < height; i++) {
+        rectangle += ("\n" + makeLine(width));
+    }
+    return rectangle;
+}
+// console.log(makeRectangle(5,3));
+
+
+function makeDownwardStairs(height) {
+    let downRightStairs = "";
+    for (let i = 0; i < height; i++) {
+        downRightStairs += ("\n" + makeLine(i+1));
+    }
+    return downRightStairs;
+}
+// console.log(makeDownwardStairs(5));
+
+
+function makeSpaceLine(numSpaces, numChars) {
+    let space = "";
+    for (let i = 0; i < numSpaces; i++) {
+        space =+ " ";
+    }
+        for (let i = 0; i < numChars; i++) {
+            space =+ "#";
+        }
+            for (let i = 0; i < numSpaces; i++) {
+                space =+ " ";
+            }
+             return space;
+}
+console.log(makeSpaceLine(3, 5));
